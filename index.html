@@ -1,0 +1,167 @@
+<html>
+    <head>
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        
+        </title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="tiltedpage-scroll.css">
+        <link rel="stylesheet" href="nanogallery.min.css">
+        <link rel="stylesheet" href="jquery.countdown.css">
+        <link rel="stylesheet" href="animate.css">
+        
+        <link rel="stylesheet" href="stylesheet1.css">
+        <link rel="stylesheet" href="media.css">
+    </head>
+    <body>
+    
+        <h1 class="tlt" data-in-effect="rollIn">Title</h1>
+<h1 class="tlt">
+	<ul class="texts">
+		<li data-out-effect="fadeOut" data-out-shuffle="true">Some Title</li>
+		<li data-in-effect="fadeIn">Another Title</li>
+	</ul>
+</h1>
+
+        
+     <div class="main">
+  <section class="page1 t_page">
+    <img src="1.jpg" class="tilt_this">
+  </section>
+  <section class="page2 t_page">
+    <img src="2.jpg" class="tilt_this">
+  </section>
+  
+  <section class="last-page t_page">
+    <img src="3.jpg" class="tilt_this">
+  </section>
+</div>
+        
+        
+  <div id="nanoGallery2"></div>
+ 
+        
+        <div id="countdown" class="countdownHolder">
+    <span class="countDays">
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+    </span>
+
+    <span class="countDiv countDiv0"></span>
+
+    <span class="countHours">
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+    </span>
+
+    <span class="countDiv countDiv1"></span>
+
+    <span class="countMinutes">
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+    </span>
+
+    <span class="countDiv countDiv2"></span>
+
+    <span class="countSeconds">
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+        <span class="position">
+            <span class="digit static"></span>
+        </span>
+    </span>
+
+    <span class="countDiv countDiv3"></span>
+</div>
+        
+        
+        <div class="anibox wow bounceInUp">
+                  Content to Reveal Here
+                  </div>
+        <div class="anibox wow jello">
+                  Content to Reveal Here
+                  </div>
+        
+        <div class="anibox wow swing">
+                  Content to Reveal Here
+                  </div>
+        
+        
+        
+        <div class="anibox wow jackInTheBox">
+                  Content to Reveal Here
+                  </div>
+        
+        <div id="jq"></div>
+
+        <h1 class="tlt">My Title</h1>
+
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="jquery.tiltedpage-scroll.min.js"></script>
+        <script>
+        $(".main").tiltedpage_scroll({
+    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+    angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+    opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+    scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+    outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+  });
+        </script>
+        
+        <script>
+        
+  $(document).ready(function () {
+      $("#nanoGallery2").nanoGallery({
+          kind: 'picasa',
+          userID: '111186676244625461692'
+      });
+  });
+        </script>
+     
+        <script src="jquery.countdown.js"></script>
+      
+        <script src="script.js"></script>
+        
+        
+        <script src="jquery.nanogallery.min.js"></script>
+        <script src="wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+        
+        <script src="jquery.lineProgressbar.js"></script>
+        
+    <script>
+        $('#jq').LineProgressbar({
+  percentage: 90,
+  fillBackgroundColor: '#3498db',
+  backgroundColor: '#EEEEEE',
+  radius: '0px',
+  height: '10px',
+  width: '100%'
+});
+        </script>
+        <script src="jquery.fittext.js"></script>
+        <script src="jquery.lettering.js"></script>
+        <script>
+        $(function () {
+	$('.tlt').textillate();
+})
+        </script>
+        <script src="bootstrap.min.js"></script>
+    </body>
+</html>
